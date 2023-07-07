@@ -1,0 +1,17 @@
+<div class="container" (mousemove)="MouseMove($event)">
+    <h2>Mouse Events</h2>
+    <img [src]="img_src" width="200">
+    <div class="mt-2">
+        <div class="btn-group">
+            <button (mousemove)="SetColor('black')" class="btn" name="black">Black</button>
+            <button (mousemove)="SetColor('grey')" class="btn" name="grey">Grey</button>
+            <button (mousemove)="SetColor('blue')" class="btn" name="blue">Blue</button>
+            <button (mousemove)="SetColor('red')" class="btn" name="red">Red</button>
+        </div>
+    </div>
+    <div style="height: 100px;"></div>
+    <img src="assets/flag.gif" alt="" [ngStyle]="styleObj" width="50">
+</div>
+<div>
+    <app-event></app-event>
+</div>

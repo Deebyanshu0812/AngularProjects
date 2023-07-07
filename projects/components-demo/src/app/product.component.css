@@ -1,0 +1,11 @@
+#heading1{
+    text-align: center;
+    color: green;
+}
+
+.border{
+    color: blue;
+    border: 2px solid blue;
+    position: absolute;
+    padding: 5px;
+}

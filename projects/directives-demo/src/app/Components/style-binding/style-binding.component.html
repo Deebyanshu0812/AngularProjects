@@ -1,0 +1,39 @@
+<div class="container">
+    <h3>Style Binding</h3>
+    <dl>
+        <dt>Background</dt>
+        <dd>
+            <select [(ngModel)]="bgStyle">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </dd>
+        <dt>Text Color</dt>
+        <dd>
+            <select [(ngModel)]="textStyle">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>  
+        </dd>
+        <dt>Padding</dt>
+        <dd>
+            1Px<input type="range" (change)="PaddingChange()" 
+            [(ngModel)]="padding" name="" min="1" max="50" id="">50Pc
+        </dd>
+        <dt>FontSize</dt>
+        <dd>
+            1Px<input type="range" (change)="FontChange()" 
+            [(ngModel)]="fontSize" name="" min="1" max="50" id="">50Pc
+        </dd>
+        <dd>
+            <button (click)="ApplyStyles" class="btn btn-primary">Click here to apply styles</button>
+        </dd>
+    </dl>
+    <div>
+        <h1 [ngStyle]="styleObj" class="btn">Deebyanshu - Angular</h1>
+    </div>
+</div>

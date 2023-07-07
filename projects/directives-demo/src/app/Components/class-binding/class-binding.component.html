@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Class Binding</h2>
+    <ul class="list-unstyled">
+        <li><input type="checkbox" ngModel #border="ngModel" name="" id="">
+            <span>Border</span>
+        </li>
+        <li><input type="checkbox" ngModel #text="ngModel" name="" id="">
+            <span>Text</span>
+        </li>
+        <li><input type="checkbox" ngModel #background="ngModel" name="" id="">
+            <span>Background</span>
+        </li>
+    </ul>
+    <h1 [ngClass]="'bg-style'">Deebyanshu-Angular</h1>
+    <h1 [ngClass]="{'bg-style':background.value,'text-styles':text.value,'border-style':border.value}">Deebyanshu-Angular</h1>
+</div>
